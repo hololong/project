@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>환율 변환</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>환율 변환</h1>
+    <div class="input-group">
+      <label for="amount">금액:</label>
+      <input type="number" id="amount" value="1">
+    </div>
+    <div class="input-group">
+      <label for="from">기준 통화:</label>
+      <select id="from">
+        <option value="USD">USD</option>
+        <option value="KRW" selected>KRW</option>
+        <option value="JPY">JPY</option>
+        <option value="EUR">EUR</option>
+        <option value="CNY">CNY</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="to">대상 통화:</label>
+      <select id="to">
+        <option value="USD" selected>USD</option>
+        <option value="KRW">KRW</option>
+        <option value="JPY">JPY</option>
+        <option value="EUR">EUR</option>
+        <option value="CNY">CNY</option>
+      </select>
+    </div>
+    <button id="convert">변환</button>
+    <div id="result"></div>
+    <div id="loading" class="hidden">
+      <div class="loader"></div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
